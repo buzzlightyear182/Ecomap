@@ -29,4 +29,5 @@ vendor/bundle
 vendor/assets/bower_components
 *.bowerrc
 *.fuse*
+.fuse*
 bower.json
