@@ -4,15 +4,20 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiYnV6emxpZ2h0eWVhcjE4MiIsImEiOiJtQ1FQWXZNIn0.3
 
     var markers = new L.MarkerClusterGroup();
 
-    for (var i = 0; i < addressPoints.length; i++) {
-        var a = addressPoints[i];
-        var title = a[2];
-        var marker = L.marker(new L.LatLng(a[0], a[1]), {
+    $.get('http://localhost:3000/search', function(data){
+      for(var i=0; i<data.length; i++){
+        var latitude = parseFloat(data[i].location.split(',')[0]);
+        var longitude = parseFloat(data[i].location.split(',')[1]);
+        var title = data[i].text;
+
+        var marker = L.marker(new L.LatLng(latitude, longitude), {
             icon: L.mapbox.marker.icon({'marker-symbol': 'post', 'marker-color': '0044FF'}),
             title: title
         });
         marker.bindPopup(title);
         markers.addLayer(marker);
-    }
+      }
+      map.addLayer(markers);
+      console.log('done it');
+    });
 
-    map.addLayer(markers);
