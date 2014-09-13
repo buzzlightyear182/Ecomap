@@ -1,0 +1,56 @@
+require 'rubygems'
+require 'oauth'
+require 'json'
+class TweetsController < ApplicationController
+  
+  def search
+    consumer_key = OAuth::Consumer.new(
+        "nltaV4viO0zaYgNa2GrWsO71p",
+        "n0wkjZ2x8N4xoUEu5UI92D2EgYs82Hg1ZEy2BOLY4u1PemBAv4")
+    access_token = OAuth::Token.new(
+        "481522636-XJVwhxa8ccmPieXXuYzEDfX7esrkRuEN0XtA2QXv",
+        "UwQZVR6kJYFULRjYad53FLkaI1D69uX2UWFBhe72MYRze")
+
+    # All requests will be sent to this server.
+    baseurl = "https://api.twitter.com"
+
+    # The verify credentials endpoint returns a 200 status if
+    # the request is signed correctly.
+    address = URI("#{baseurl}/1.1/search/tweets.json?q=%23savetheartic&count=100")
+
+    # Set up Net::HTTP to use SSL, which is required by Twitter.
+    http = Net::HTTP.new address.host, address.port
+    http.use_ssl = true
+    http.verify_mode = OpenSSL::SSL::VERIFY_PEER
+
+    # Build the request and authorize it with OAuth.
+    request = Net::HTTP::Get.new address.request_uri
+    request.oauth! http, consumer_key, access_token
+
+    # Issue the request and return the response.
+    http.start
+    response = http.request request
+
+
+    puts "The response status was #{response.code}"
+    response = JSON.parse(response.body)
+    ids = response['statuses'].map{|status| status['id']}
+    locations = response['statuses'].map{|status| status['user']['location']}
+    retweet_counts = response['statuses'].map{|status| status['retweet_count'].to_i}
+    retweet_counts.sort!{ |x,y| y <=> x } 
+    puts ids
+    puts locations
+    puts retweet_counts
+    render :json => response.to_json
+  end
+
+
+  private
+
+  def json_response item
+    respond_to do |format|
+      format.json {render :json=>item.to_json}
+    end
+  end
+
+end
