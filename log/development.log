@@ -1269,3 +1269,723 @@ Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-13 21:41:15 +0800
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 21:41:15 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 16:14:48 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 493ms (Views: 485.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-13 16:14:49 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 16:14:49 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 16:14:49 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 16:14:49 +0200
+
+
+Started GET "/assets/mapbox.css?body=1" for 127.0.0.1 at 2014-09-13 16:14:49 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-13 16:14:49 +0200
+
+
+Started GET "/assets/mapbox.js?body=1" for 127.0.0.1 at 2014-09-13 16:14:49 +0200
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-13 16:14:49 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-13 16:14:49 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 16:14:49 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 16:20:57 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-13 16:20:57 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 16:20:57 +0200
+
+
+Started GET "/assets/mapbox.css?body=1" for 127.0.0.1 at 2014-09-13 16:20:57 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 16:20:57 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 16:20:57 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-13 16:20:57 +0200
+
+
+Started GET "/assets/mapbox.js?body=1" for 127.0.0.1 at 2014-09-13 16:20:57 +0200
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-13 16:20:57 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-13 16:20:57 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 16:20:57 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 16:21:12 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-13 16:21:12 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 16:21:12 +0200
+
+
+Started GET "/assets/mapbox.css?body=1" for 127.0.0.1 at 2014-09-13 16:21:12 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 16:21:12 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 16:21:12 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-13 16:21:12 +0200
+
+
+Started GET "/assets/mapbox.js?body=1" for 127.0.0.1 at 2014-09-13 16:21:12 +0200
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-13 16:21:12 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-13 16:21:12 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 16:21:12 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 16:21:53 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-13 16:21:53 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 16:21:53 +0200
+
+
+Started GET "/assets/mapbox.css?body=1" for 127.0.0.1 at 2014-09-13 16:21:53 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 16:21:53 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 16:21:53 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-13 16:21:53 +0200
+
+
+Started GET "/assets/mapbox.js?body=1" for 127.0.0.1 at 2014-09-13 16:21:53 +0200
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-13 16:21:53 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-13 16:21:53 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 16:21:53 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 16:22:10 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mapbox.css?body=1" for 127.0.0.1 at 2014-09-13 16:22:10 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 16:22:10 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-13 16:22:10 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:10 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:10 +0200
+
+
+Started GET "/assets/mapbox.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:10 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:10 +0200
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:10 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:10 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:10 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 16:22:20 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:20 +0200
+
+
+Started GET "/assets/mapbox.css?body=1" for 127.0.0.1 at 2014-09-13 16:22:20 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 16:22:20 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:20 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-13 16:22:20 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:20 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:20 +0200
+
+
+Started GET "/assets/mapbox.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:20 +0200
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:20 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:20 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 16:22:30 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 15ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 16:22:30 +0200
+
+
+Started GET "/assets/mapbox.css?body=1" for 127.0.0.1 at 2014-09-13 16:22:30 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:30 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:30 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:30 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-13 16:22:30 +0200
+
+
+Started GET "/assets/mapbox.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:30 +0200
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:30 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:30 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:30 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 16:22:37 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-13 16:22:37 +0200
+
+
+Started GET "/assets/mapbox.css?body=1" for 127.0.0.1 at 2014-09-13 16:22:37 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 16:22:37 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:37 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:37 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:37 +0200
+
+
+Started GET "/assets/mapbox.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:37 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:37 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:37 +0200
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-13 16:22:37 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 16:23:10 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-13 16:23:11 +0200
+
+
+Started GET "/assets/mapbox.css?body=1" for 127.0.0.1 at 2014-09-13 16:23:11 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 16:23:11 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:11 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:11 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:11 +0200
+
+
+Started GET "/assets/mapbox.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:11 +0200
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:11 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:11 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:11 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 16:23:18 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-13 16:23:18 +0200
+
+
+Started GET "/assets/mapbox.css?body=1" for 127.0.0.1 at 2014-09-13 16:23:18 +0200
+
+
+Started GET "/assets/mapbox.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:18 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:18 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 16:23:18 +0200
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:18 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:18 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:18 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:18 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:18 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 16:23:42 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:42 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-13 16:23:42 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 16:23:42 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:42 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:42 +0200
+
+
+Started GET "/assets/mapbox.css?body=1" for 127.0.0.1 at 2014-09-13 16:23:42 +0200
+
+
+Started GET "/assets/mapbox.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:42 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:42 +0200
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:42 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:42 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 16:23:49 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-13 16:23:49 +0200
+
+
+Started GET "/assets/mapbox.css?body=1" for 127.0.0.1 at 2014-09-13 16:23:49 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 16:23:49 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:49 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:49 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:49 +0200
+
+
+Started GET "/assets/mapbox.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:49 +0200
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:49 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:49 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 16:23:49 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 16:24:01 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-13 16:24:01 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 16:24:01 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-13 16:24:01 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 16:24:01 +0200
+
+
+Started GET "/assets/mapbox.css?body=1" for 127.0.0.1 at 2014-09-13 16:24:01 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 16:24:01 +0200
+
+
+Started GET "/assets/mapbox.js?body=1" for 127.0.0.1 at 2014-09-13 16:24:01 +0200
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-13 16:24:01 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-13 16:24:01 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 16:24:01 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 16:25:37 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-13 16:25:37 +0200
+
+
+Started GET "/assets/mapbox.css?body=1" for 127.0.0.1 at 2014-09-13 16:25:37 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 16:25:37 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 16:25:37 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 16:25:37 +0200
+
+
+Started GET "/assets/mapbox.js?body=1" for 127.0.0.1 at 2014-09-13 16:25:37 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-13 16:25:37 +0200
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-13 16:25:37 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-13 16:25:37 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 16:25:37 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 16:28:37 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-13 16:28:37 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 16:28:37 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 16:28:37 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 16:28:37 +0200
+
+
+Started GET "/assets/mapbox.css?body=1" for 127.0.0.1 at 2014-09-13 16:28:37 +0200
+
+
+Started GET "/assets/mapbox.js?body=1" for 127.0.0.1 at 2014-09-13 16:28:37 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-13 16:28:37 +0200
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-13 16:28:37 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 16:28:37 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-13 16:28:37 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 16:28:55 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-13 16:28:55 +0200
+
+
+Started GET "/assets/mapbox.css?body=1" for 127.0.0.1 at 2014-09-13 16:28:55 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 16:28:55 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 16:28:55 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 16:28:55 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-13 16:28:55 +0200
+
+
+Started GET "/assets/mapbox.js?body=1" for 127.0.0.1 at 2014-09-13 16:28:55 +0200
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-13 16:28:55 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-13 16:28:55 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 16:28:55 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 16:29:07 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-13 16:29:07 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 16:29:07 +0200
+
+
+Started GET "/assets/mapbox.css?body=1" for 127.0.0.1 at 2014-09-13 16:29:07 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 16:29:07 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 16:29:07 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-13 16:29:07 +0200
+
+
+Started GET "/assets/mapbox.js?body=1" for 127.0.0.1 at 2014-09-13 16:29:07 +0200
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-13 16:29:07 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-13 16:29:07 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 16:29:07 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 16:29:15 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-13 16:29:15 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 16:29:15 +0200
+
+
+Started GET "/assets/mapbox.css?body=1" for 127.0.0.1 at 2014-09-13 16:29:15 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-13 16:29:15 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 16:29:15 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 16:29:15 +0200
+
+
+Started GET "/assets/mapbox.js?body=1" for 127.0.0.1 at 2014-09-13 16:29:15 +0200
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-13 16:29:15 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-13 16:29:15 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 16:29:15 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 16:31:59 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 16:31:59 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 16:31:59 +0200
+
+
+Started GET "/assets/mapbox.css?body=1" for 127.0.0.1 at 2014-09-13 16:31:59 +0200
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-13 16:31:59 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 16:31:59 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-13 16:31:59 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-13 16:31:59 +0200
+
+
+Started GET "/assets/mapbox.js?body=1" for 127.0.0.1 at 2014-09-13 16:31:59 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 16:31:59 +0200
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-13 16:31:59 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 16:32:26 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-13 16:32:26 +0200
+
+
+Started GET "/assets/mapbox.css?body=1" for 127.0.0.1 at 2014-09-13 16:32:26 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 16:32:26 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 16:32:26 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-13 16:32:26 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 16:32:26 +0200
+
+
+Started GET "/assets/mapbox.js?body=1" for 127.0.0.1 at 2014-09-13 16:32:26 +0200
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-13 16:32:26 +0200
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-13 16:32:26 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 16:32:26 +0200
