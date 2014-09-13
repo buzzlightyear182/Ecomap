@@ -1,11 +1,3 @@
-<header>
-<h1>EcoMap v0.0.1</h1>
-<p>Geeklist hack4good 0.6A "real-time" map to display tweets about climate change and environmental concerns</p>
-</header>
-
-<div id='map' class='dark'></div>
-
-<script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiYnV6emxpZ2h0eWVhcjE4MiIsImEiOiJtQ1FQWXZNIn0.3Mbs1_mAeGXybLb5OPhsCg';
     var map = L.mapbox.map('map', 'buzzlightyear182.j547ep00')
         .setView([41.398, 2.174], 3);
@@ -24,5 +16,3 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiYnV6emxpZ2h0eWVhcjE4MiIsImEiOiJtQ1FQWXZNIn0.3
     }
 
     map.addLayer(markers);
-</script>
-
