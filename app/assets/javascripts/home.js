@@ -11,13 +11,12 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiYnV6emxpZ2h0eWVhcjE4MiIsImEiOiJtQ1FQWXZNIn0.3
         var title = data[i].text;
 
         var marker = L.marker(new L.LatLng(latitude, longitude), {
-            icon: L.mapbox.marker.icon({'marker-symbol': 'post', 'marker-color': '0044FF'}),
+            icon: L.mapbox.marker.icon({'marker-symbol': 'post', 'marker-color': 'FF4455'}),
             title: title
         });
         marker.bindPopup(title);
         markers.addLayer(marker);
       }
       map.addLayer(markers);
-      console.log('done it');
     });
 
