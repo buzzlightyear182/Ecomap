@@ -11,7 +11,7 @@ class TweetsController < ApplicationController
         "481522636-XJVwhxa8ccmPieXXuYzEDfX7esrkRuEN0XtA2QXv",
         "UwQZVR6kJYFULRjYad53FLkaI1D69uX2UWFBhe72MYRze")
 
-    hashtag = 'realmadrid'
+    hashtag = 'hack4good'
 
     address = URI("https://api.twitter.com/1.1/search/tweets.json?q=%23#{hashtag}&result_type=popular")
 
@@ -31,7 +31,6 @@ class TweetsController < ApplicationController
 
     tweets = choose_tweets_from tweets
     
-
     render :json => tweets.to_json
   end
 

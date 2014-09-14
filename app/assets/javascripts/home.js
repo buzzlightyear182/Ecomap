@@ -14,10 +14,16 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiYnV6emxpZ2h0eWVhcjE4MiIsImEiOiJtQ1FQWXZNIn0.3
             icon: L.mapbox.marker.icon({'marker-symbol': 'post', 'marker-color': '0044FF'}),
             title: title
         });
+
+        map.legendControl.addLegend('<div>'+title+'</div>');
+
+
         marker.bindPopup(title);
         markers.addLayer(marker);
       }
+
       map.addLayer(markers);
       console.log('done it');
+
     });
 
