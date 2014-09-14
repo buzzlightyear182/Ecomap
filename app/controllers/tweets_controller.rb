@@ -11,27 +11,38 @@ class TweetsController < ApplicationController
         "481522636-XJVwhxa8ccmPieXXuYzEDfX7esrkRuEN0XtA2QXv",
         "UwQZVR6kJYFULRjYad53FLkaI1D69uX2UWFBhe72MYRze")
 
-    hashtag = 'hack4good'
+    hashtags = ['hack4good', 'ecomap']
+    hashtags.each do |hashtag|
+      address = URI("https://api.twitter.com/1.1/search/tweets.json?q=%23#{hashtag}&result_type=popular")
 
-    address = URI("https://api.twitter.com/1.1/search/tweets.json?q=%23#{hashtag}&result_type=popular")
+      http = Net::HTTP.new address.host, address.port
+      http.use_ssl = true
+      http.verify_mode = OpenSSL::SSL::VERIFY_PEER
 
-    http = Net::HTTP.new address.host, address.port
-    http.use_ssl = true
-    http.verify_mode = OpenSSL::SSL::VERIFY_PEER
+      request = Net::HTTP::Get.new address.request_uri
+      request.oauth! http, consumer_key, access_token
 
-    request = Net::HTTP::Get.new address.request_uri
-    request.oauth! http, consumer_key, access_token
+      http.start
+      response = http.request request
 
-    http.start
-    response = http.request request
+      response = JSON.parse(response.body)
+      
+      tweets = choose_data_from response
 
-    response = JSON.parse(response.body)
-    
-    tweets = choose_data_from response
+      tweets = choose_tweets_from tweets
+      
+      render :json => tweets.to_json
 
-    tweets = choose_tweets_from tweets
-    
-    render :json => tweets.to_json
+      tweets.each do |tweet|
+        db_tweets = Tweet.where(tweet_id: tweet['tweet_id'])
+      end
+      db_tweets = Tweet.where(:id > 0)
+      if db_tweets
+        
+      else
+        Tweet.new(tweet_id: tweets['tweet_id'],retweet_count: tweets['retweet_count'],coordinates: tweet['location'],screen_name: tweet['screen_name'],text:tweet['text'])
+      end
+    end
   end
 
   private
