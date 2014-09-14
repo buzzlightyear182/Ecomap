@@ -5,17 +5,17 @@ class TweetsController < ApplicationController
   
   def search
     consumer_key = OAuth::Consumer.new(
-        "nltaV4viO0zaYgNa2GrWsO71p",
-        "n0wkjZ2x8N4xoUEu5UI92D2EgYs82Hg1ZEy2BOLY4u1PemBAv4")
+        "ib3vpCDC4AWcijwBIHbXbp6Wd",
+        "NBDzLE1BQ2kn3kvmILvql8jVtME3ItYRTPCFBjCj6qFjkmKjIj")
     access_token = OAuth::Token.new(
         "481522636-XJVwhxa8ccmPieXXuYzEDfX7esrkRuEN0XtA2QXv",
         "UwQZVR6kJYFULRjYad53FLkaI1D69uX2UWFBhe72MYRze")
     tweets =[]
-    hashtags = ['hack4good', 'climatechange','savetheworld', 'greenpeace']
+    hashtags = ['climatechange', 'savetheworld', 'hack4good']
     hashtags.each do |hashtag|
       address = URI("https://api.twitter.com/1.1/search/tweets.json?q=%23#{hashtag}&count=100")
 
-      address = URI("https://api.twitter.com/1.1/search/tweets.json?q=%23#{hashtag}&result_type=popular") if hashtag == 'hackg4good'
+      address = URI("https://api.twitter.com/1.1/search/tweets.json?q=%23#{hashtag}&result_type=popular") if hashtag == 'hack4good'
 
       http = Net::HTTP.new address.host, address.port
       http.use_ssl = true
@@ -28,23 +28,24 @@ class TweetsController < ApplicationController
       response = http.request request
 
       response = JSON.parse(response.body)
-      
+
       tweets = choose_data_from response
 
       tweets = choose_tweets_from tweets
-      
-      puts tweets
+           
 
       tweets.each do |tweet|
         db_tweet = Tweet.find_by(tweet_id: tweet['tweet_id'])
         if db_tweet && db_tweet.tweet_id == tweet['tweet_id']
+          puts 'not creating tweets'
           db_tweet.update(tweet)
         else
-          hashtag == 'hackg4good' ? Ourtweet.create(tweet) : Tweet.create(tweet);
+          puts 'creating tweets'
+          hashtag == 'hack4good' ? Ourtweet.create(tweet) : Tweet.create(tweet);
         end
       end
     end
-    render :json => tweets.to_json
+    render :json => tweets.to_json 
   end
 
   def good_points
@@ -91,9 +92,11 @@ class TweetsController < ApplicationController
   end
 
   def choose_tweets_from tweets
+    puts tweets.size
     tweets.sort!{|x, y| y['retweet_count'] <=> x['retweet_count'] } 
     tweets.reject!{|tweet| tweet['coordinates']==nil}
     tweets
   end
 
 end
+ 
