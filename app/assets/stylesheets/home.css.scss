@@ -28,10 +28,59 @@ header {
   height: 100%;
 }
 .map-legends{
-  height: 900px;
+  position:relative;
+  height: 700px;
   overflow: scroll;
 }
 #tweet_img { 
-  float: left;
+  float: right;
   margin-right: 5px;
+}
+.upvote {
+width: 30px;
+height: 42px;
+text-align: center;
+cursor: pointer;
+background: #efefef;
+padding: 0 1px;
+border-bottom: 1px solid #bbbbbb;
+float: left;
+}
+.upvote .upvote-link {
+position: relative;
+bottom: 5px;
+display: inline-block;
+width: 0px;
+height: 0px;
+border-bottom: 12px solid #534540;
+border-left: 8px solid transparent;
+border-right: 8px solid transparent;
+border-top: 12px solid transparent;
+-webkit-transition: border-color 0.1s ease-in;
+-moz-transition: border-color 0.1s ease-in;
+-o-transition: border-color 0.1s ease-in;
+transition: border-color 0.1s ease-in;
+}
+.upvote .vote-count {
+font-size: 12px;
+display: block;
+position: relative;
+bottom: 4px;
+color: #534540;
+font-weight: 600;
+-webkit-transition: color 0.1s ease-in;
+-moz-transition: color 0.1s ease-in;
+-o-transition: color 0.1s ease-in;
+transition: color 0.1s ease-in;
+}
+.screen_name{
+  float: left;
+  margin-left: 5px;
+  width: 100px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.tweet{
+  float: left;
+  margin-bottom: 5px;
 }

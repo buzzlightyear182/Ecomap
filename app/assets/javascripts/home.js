@@ -32,23 +32,33 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiYnV6emxpZ2h0eWVhcjE4MiIsImEiOiJtQ1FQWXZNIn0.3
         var latitude = parseFloat(data[i].coordinates.split(',')[0]);
         var longitude = parseFloat(data[i].coordinates.split(',')[1]);
         var title = data[i].text;
+        var favourite_count = data[i].favourite_count;
         var screen_name = data[i].screen_name;
         var profile_pic = data[i].profile_pic
         var marker = L.marker(new L.LatLng(latitude, longitude), {
-
             title: title
         });
          marker.setIcon(L.mapbox.marker.icon({
                     'marker-color': '#11ff11',
                     'marker-size': 'large'
                 }));
-        map.legendControl.addLegend('<div><img id="tweet_img" src="'+ profile_pic +'" /><strong>'+ screen_name +' </strong>'+title+'</div>');
-        console.log(data[i].screen_name);
-
+        map.legendControl.addLegend('<div><div class="upvote"><a href="#" class="upvote-link"></a><span class="vote-count">'+favourite_count+'</span></div><div class="screen_name">'+ screen_name +'</div><img id="tweet_img" src="'+ profile_pic +'" /><div class="tweet">'+title+'</div></div>');
+       
+        
         marker.bindPopup(title);
         markers.addLayer(marker);
+        var screen_name_div = document.getElementsByClassName("screen_name");
+        for (var i = 0; i < screen_name_div.length; i++) {
+            screen_name_div[i].addEventListener("click", myfuction, false); 
+        }
+        function myfuction(){
+           marker.bindPopup(title).openPopup();
+        }
       }
 
       map.addLayer(markers);
     });
+
+    
+
 
