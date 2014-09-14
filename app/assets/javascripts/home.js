@@ -16,7 +16,7 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiYnV6emxpZ2h0eWVhcjE4MiIsImEiOiJtQ1FQWXZNIn0.3
             title: title
         });
 
-        map.legendControl.addLegend('<div><img id="tweet_img" src="'+ profile_pic +'"/><strong>'+ screen_name +' </strong>'+title+'</div>');
+        map.legendControl.addLegend('<div><img id="tweet_img" src="'+ profile_pic +'" /><strong>'+ screen_name +' </strong>'+title+'</div>');
         console.log(data[i].screen_name);
 
         marker.bindPopup(title);
