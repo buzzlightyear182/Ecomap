@@ -10,10 +10,12 @@ class TweetsController < ApplicationController
     access_token = OAuth::Token.new(
         "481522636-XJVwhxa8ccmPieXXuYzEDfX7esrkRuEN0XtA2QXv",
         "UwQZVR6kJYFULRjYad53FLkaI1D69uX2UWFBhe72MYRze")
-
-    hashtags = ['hack4good', 'ecomap']
+    tweets =[]
+    hashtags = ['hack4good', 'climatechange','savetheworld', 'greenpeace']
     hashtags.each do |hashtag|
-      address = URI("https://api.twitter.com/1.1/search/tweets.json?q=%23#{hashtag}&result_type=popular")
+      address = URI("https://api.twitter.com/1.1/search/tweets.json?q=%23#{hashtag}&count=100")
+
+      address = URI("https://api.twitter.com/1.1/search/tweets.json?q=%23#{hashtag}&result_type=popular") if hashtag == 'hackg4good'
 
       http = Net::HTTP.new address.host, address.port
       http.use_ssl = true
@@ -31,18 +33,28 @@ class TweetsController < ApplicationController
 
       tweets = choose_tweets_from tweets
       
-      render :json => tweets.to_json
+      puts tweets
 
       tweets.each do |tweet|
-        db_tweets = Tweet.where(tweet_id: tweet['tweet_id'])
-      end
-      db_tweets = Tweet.where(:id > 0)
-      if db_tweets
-        
-      else
-        Tweet.new(tweet_id: tweets['tweet_id'],retweet_count: tweets['retweet_count'],coordinates: tweet['location'],screen_name: tweet['screen_name'],text:tweet['text'])
+        db_tweet = Tweet.find_by(tweet_id: tweet['tweet_id'])
+        if db_tweet && db_tweet.tweet_id == tweet['tweet_id']
+          db_tweet.update(tweet)
+        else
+          hashtag == 'hackg4good' ? Ourtweet.create(tweet) : Tweet.create(tweet);
+        end
       end
     end
+    render :json => tweets.to_json
+  end
+
+  def good_points
+    tweets = Ourtweet.all
+    render :json => tweets.to_json
+  end
+
+  def bad_points
+    tweets = Tweet.all
+    render :json => tweets.to_json
   end
 
   private
@@ -52,7 +64,7 @@ class TweetsController < ApplicationController
     response['statuses'].map do |status|
       tweet = {}
       tweet['retweet_count'] = status['retweet_count'].to_i
-      tweet['favourites_count'] =  status['favorite_count'].to_i
+      tweet['favourite_count'] =  status['favorite_count'].to_i
       tweet['tweet_id'] = status['id'].to_i
       tweet['text'] =  status['text']
       tweet['image'] =  status['entities']['media'][0]['media_url'] if status['entities']['media']
@@ -70,7 +82,7 @@ class TweetsController < ApplicationController
       coordinates = locations['results'][0]['geometry']['location'] if locations['results'][0]
       string_cordinates = "#{coordinates['lat']}, #{coordinates['lng']}" if coordinates
 
-      tweet['location'] = string_cordinates
+      tweet['coordinates'] = string_cordinates
       tweet['screen_name'] = status['user']['screen_name']
       tweet['profile_pic'] = status['user']['profile_image_url']
       tweets << tweet
@@ -80,7 +92,7 @@ class TweetsController < ApplicationController
 
   def choose_tweets_from tweets
     tweets.sort!{|x, y| y['retweet_count'] <=> x['retweet_count'] } 
-    tweets.reject!{|tweet| tweet['location']==nil}
+    tweets.reject!{|tweet| tweet['coordinates']==nil}
     tweets
   end
 
