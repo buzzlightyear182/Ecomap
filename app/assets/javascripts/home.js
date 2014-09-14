@@ -9,21 +9,21 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiYnV6emxpZ2h0eWVhcjE4MiIsImEiOiJtQ1FQWXZNIn0.3
         var latitude = parseFloat(data[i].location.split(',')[0]);
         var longitude = parseFloat(data[i].location.split(',')[1]);
         var title = data[i].text;
-
+        var screen_name = data[i].screen_name;
+        var profile_pic = data[i].profile_pic
         var marker = L.marker(new L.LatLng(latitude, longitude), {
             icon: L.mapbox.marker.icon({'marker-symbol': 'post', 'marker-color': '0044FF'}),
             title: title
         });
 
-        map.legendControl.addLegend('<div>'+title+'</div>');
-
+        map.legendControl.addLegend('<div><img src="'+ profile_pic +'" alt="" /><strong>@'+ screen_name +' </strong>'+title+'</div>');
+        console.log(data[i].screen_name);
 
         marker.bindPopup(title);
         markers.addLayer(marker);
       }
 
       map.addLayer(markers);
-      console.log('done it');
-
+      
     });
 

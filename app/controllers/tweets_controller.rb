@@ -61,6 +61,7 @@ class TweetsController < ApplicationController
 
       tweet['location'] = string_cordinates
       tweet['screen_name'] = status['user']['screen_name']
+      tweet['profile_pic'] = status['user']['profile_image_url']
       tweets << tweet
     end
     tweets
