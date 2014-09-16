@@ -36,6 +36,8 @@ class TweetsController < ApplicationController
 
       tweets.each do |tweet|
         db_tweet = Tweet.find_by(tweet_id: tweet['tweet_id'])
+        db_tweet ||= Ourtweet.find_by(tweet_id: tweet['tweet_id'])
+
         if db_tweet && db_tweet.tweet_id == tweet['tweet_id']
           puts 'not creating tweets'
           db_tweet.update(tweet)
