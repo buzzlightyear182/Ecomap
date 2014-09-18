@@ -31,7 +31,7 @@ class TweetsController < ApplicationController
 
       tweets = choose_data_from response
 
-      tweets = choose_tweets_from tweets
+      tweets = reject_empty_location tweets
            
 
       tweets.each do |tweet|
@@ -93,7 +93,7 @@ class TweetsController < ApplicationController
     tweets
   end
 
-  def choose_tweets_from tweets
+  def reject_empty_location tweets
     puts tweets.size
     tweets.sort!{|x, y| y['retweet_count'] <=> x['retweet_count'] } 
     tweets.reject!{|tweet| tweet['coordinates']==nil}
