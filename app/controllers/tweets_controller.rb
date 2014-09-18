@@ -36,14 +36,14 @@ class TweetsController < ApplicationController
 
       tweets.each do |tweet|
         db_tweet = Tweet.find_by(tweet_id: tweet['tweet_id'])
-        db_tweet ||= Ourtweet.find_by(tweet_id: tweet['tweet_id'])
 
         if db_tweet && db_tweet.tweet_id == tweet['tweet_id']
           puts 'not creating tweets'
           db_tweet.update(tweet)
         else
           puts 'creating tweets'
-          hashtag == 'hack4good' ? Ourtweet.create(tweet) : Tweet.create(tweet);
+          hashtag == 'hack4good' ? tweet['role']= 'goodtweet' : tweet['role']='badtweet'
+          Tweet.create(tweet)
         end
       end
     end
@@ -51,12 +51,12 @@ class TweetsController < ApplicationController
   end
 
   def good_points
-    tweets = Ourtweet.all
+    tweets = Tweet.where(role: 'goodtweet')
     render :json => tweets.to_json
   end
 
   def bad_points
-    tweets = Tweet.all
+    tweets = Tweet.where(role: 'badtweet')
     render :json => tweets.to_json
   end
 
