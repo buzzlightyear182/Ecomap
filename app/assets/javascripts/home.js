@@ -16,17 +16,22 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiYnV6emxpZ2h0eWVhcjE4MiIsImEiOiJtQ1FQWXZNIn0.3
 
     
 var appendMarkers = function(geoPoints, typeOfPoint){
-  for(var i=0; i<geoPoints.length; i++){
-    var latitude = parseFloat(geoPoints[i].coordinates.split(',')[0]);
-    var longitude = parseFloat(geoPoints[i].coordinates.split(',')[1]);
-    var description = geoPoints[i].text;
+  for(var i=0; i<geoPoints.length; i++)(function(i){
+    appendMarker(geoPoints, typeOfPoint, i);
+  })(i);
+}
+
+var appendMarker = function(geoPoints, typeOfPoint, index){
+  setTimeout(function(){
+    var latitude = parseFloat(geoPoints[index].coordinates.split(',')[0]);
+    var longitude = parseFloat(geoPoints[index].coordinates.split(',')[1]);
+    var description = geoPoints[index].text;
     var marker = L.marker([latitude, longitude]);
     if(typeOfPoint == 'red'){
       marker.setIcon(L.mapbox.marker.icon({
         'marker-color': '#ff1111',
         'marker-size': 'large'
       }));
-      layer.addLayer(marker);
     }
 
     else if(typeOfPoint == 'green'){
@@ -35,12 +40,11 @@ var appendMarkers = function(geoPoints, typeOfPoint){
         'marker-size': 'large'
       }));      
       greenMarkers.push(marker);
-      layer.addLayer(marker)
     }
-
     marker.bindPopup(description);
-  }
-  map.addLayer(layer);
+    layer.addLayer(marker)
+    map.addLayer(layer);
+  }, 100*index + Math.floor(Math.random()*150))
 }
 
 var appendLegend = function(geoPoints){
@@ -54,9 +58,6 @@ var appendLegend = function(geoPoints){
   
   var screen_name_div = document.getElementsByClassName("screen_name");
   for(var i=0; i<screen_name_div.length; i++)(function(i, marker){
-    var latitude = parseFloat(geoPoints[i].coordinates.split(',')[0]);
-    var longitude = parseFloat(geoPoints[i].coordinates.split(',')[1]);
-
     screen_name_div[i].addEventListener('click', function(){
       greenMarkers[i].openPopup();
     });
