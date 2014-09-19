@@ -4,6 +4,7 @@ class CreateTweets < ActiveRecord::Migration
       t.integer :tweet_id
       t.integer :retweet_count
       t.integer :favourite_count
+      t.string :role
       t.string :coordinates
       t.string :screen_name
       t.string :text
