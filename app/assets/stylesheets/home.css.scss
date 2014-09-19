@@ -1,5 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
-
+@mixin marker-animation($color){
+  background-color: $color;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0px 0px 30px 10px rgba(255,255,255,0.8);
+  -webkit-animation-name: wave;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+}
 html, body {
   font-family: 'Roboto', sans-serif;
   font-size: 100%;
@@ -83,4 +90,25 @@ transition: color 0.1s ease-in;
 .tweet{
   float: left;
   margin-bottom: 5px;
+}
+
+.green-marker{
+  @include marker-animation(rgba(25,255,25,0.6));
+}
+.red-marker{
+  @include marker-animation(rgba(255,25,25,0.6));
+}
+
+@-webkit-keyframes wave{
+  0%{
+    margin: 25px;
+    width: 0px;
+    height: 0px;
+  }
+
+  100%{
+    margin: 0px;
+    width: 100px;
+    height: 100px;    
+  }
 }

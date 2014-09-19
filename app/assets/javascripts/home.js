@@ -26,25 +26,35 @@ var appendMarker = function(geoPoints, typeOfPoint, index){
     var latitude = parseFloat(geoPoints[index].coordinates.split(',')[0]);
     var longitude = parseFloat(geoPoints[index].coordinates.split(',')[1]);
     var description = geoPoints[index].text;
-    var marker = L.marker([latitude, longitude]);
+    var marker = null;
     if(typeOfPoint == 'red'){
-      marker.setIcon(L.mapbox.marker.icon({
-        'marker-color': '#ff1111',
-        'marker-size': 'large'
-      }));
+      marker = L.marker(
+        [latitude, longitude],
+        {
+          icon: L.divIcon({
+            className: 'red-marker',
+            iconSize: [20, 20]
+          })
+        }
+      );
     }
 
     else if(typeOfPoint == 'green'){
-      marker.setIcon(L.mapbox.marker.icon({
-        'marker-color': '#11ff11',
-        'marker-size': 'large'
-      }));      
+      marker = L.marker(
+        [latitude, longitude],
+        {
+          icon: L.divIcon({
+            className: 'green-marker',
+            iconSize: [20, 20]
+          })
+        }
+      );      
       greenMarkers.push(marker);
     }
     marker.bindPopup(description);
     layer.addLayer(marker)
     map.addLayer(layer);
-  }, 100*index + Math.floor(Math.random()*150))
+  }, 450*index + Math.floor(Math.random()*450))
 }
 
 var appendLegend = function(geoPoints){
