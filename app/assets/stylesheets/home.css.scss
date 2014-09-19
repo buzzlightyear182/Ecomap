@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
 @mixin marker-animation($color){
+  margin: -25px;
   background-color: $color;
   border-radius: 50%;
   -webkit-box-shadow: inset 0px 0px 30px 10px rgba(255,255,255,0.8);
@@ -101,13 +102,13 @@ transition: color 0.1s ease-in;
 
 @-webkit-keyframes wave{
   0%{
-    margin: 25px;
+    margin: 0px;
     width: 0px;
     height: 0px;
   }
 
   100%{
-    margin: 0px;
+    margin: -50px;
     width: 100px;
     height: 100px;    
   }
