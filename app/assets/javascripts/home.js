@@ -27,30 +27,16 @@ var appendMarker = function(geoPoints, typeOfPoint, index){
     var longitude = parseFloat(geoPoints[index].coordinates.split(',')[1]);
     var description = geoPoints[index].text;
     var marker = null;
-    if(typeOfPoint == 'red'){
-      marker = L.marker(
-        [latitude, longitude],
-        {
-          icon: L.divIcon({
-            className: 'red-marker',
-            iconSize: [20, 20]
-          })
-        }
-      );
-    }
-
-    else if(typeOfPoint == 'green'){
-      marker = L.marker(
-        [latitude, longitude],
-        {
-          icon: L.divIcon({
-            className: 'green-marker',
-            iconSize: [20, 20]
-          })
-        }
-      );      
-      greenMarkers.push(marker);
-    }
+    marker = L.marker(
+      [latitude, longitude],
+      {
+        icon: L.divIcon({
+          className: typeOfPoint+'-marker',
+          iconSize: [20, 20]
+        })
+      }
+    );
+    if(typeOfPoint=='green') greenMarkers.push(marker);
     marker.bindPopup(description);
     layer.addLayer(marker)
     map.addLayer(layer);
