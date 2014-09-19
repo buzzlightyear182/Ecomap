@@ -15,13 +15,13 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiYnV6emxpZ2h0eWVhcjE4MiIsImEiOiJtQ1FQWXZNIn0.3
     });
 
     
-var appendMarkers = function(geoPoints, typeOfPoint){
+var appendMarkers = function(geoPoints, markerColor){
   for(var i=0; i<geoPoints.length; i++)(function(i){
-    appendMarker(geoPoints, typeOfPoint, i);
+    appendMarker(geoPoints, markerColor, i);
   })(i);
 }
 
-var appendMarker = function(geoPoints, typeOfPoint, index){
+var appendMarker = function(geoPoints, markerColor, index){
   setTimeout(function(){
     var latitude = parseFloat(geoPoints[index].coordinates.split(',')[0]);
     var longitude = parseFloat(geoPoints[index].coordinates.split(',')[1]);
@@ -31,12 +31,12 @@ var appendMarker = function(geoPoints, typeOfPoint, index){
       [latitude, longitude],
       {
         icon: L.divIcon({
-          className: typeOfPoint+'-marker',
+          className: markerColor+'-marker',
           iconSize: [20, 20]
         })
       }
     );
-    if(typeOfPoint=='green') greenMarkers.push(marker);
+    if(markerColor=='green') greenMarkers.push(marker);
     marker.bindPopup(description);
     layer.addLayer(marker)
     map.addLayer(layer);
