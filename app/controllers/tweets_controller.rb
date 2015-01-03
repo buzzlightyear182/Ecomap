@@ -51,12 +51,12 @@ class TweetsController < ApplicationController
   end
 
   def good_points
-    tweets = Tweet.where(role: 'goodtweet')
+    tweets = Tweet.where(role: 'goodtweet').limit(75)
     render :json => tweets.to_json
   end
 
   def bad_points
-    tweets = Tweet.where(role: 'badtweet')
+    tweets = Tweet.where(role: 'badtweet').limit(75)
     render :json => tweets.to_json
   end
 
